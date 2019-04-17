@@ -1,5 +1,5 @@
 body {
-    background: #333;
+    background: rgb(17, 17, 17);
     color: #fff;
 }
 
@@ -102,6 +102,14 @@ body {
     background: black;
 }
 
+.concept-caption {
+    /* position: relative; */
+    text-align: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
 .carousel-item {
     height: 550px;
     max-width: 100%;
@@ -111,27 +119,13 @@ body {
 }
 
 .carousel-img {
-    max-width: 700px;
+    max-width: 500px;
     height: auto;
 }
 
-/* .carousel-image-1 {
-    background: url(../images/site_link_images/looplab_laptop.png);
-}
 
-.carousel-image-2 {
-    background: url(../images/site_link_images/mizuxe_laptop.png);
-}
-
-.carousel-image-3 {
-    background: url(../images/site_link_images/glozzom_laptop.png);
-} */
-
-/* RESPONSIVE DESIGN SETTINGS */
 
 @media (max-width: 768px) {
-    /* #main-section {
-        min-height: 500px; } */
     #main-section h1 {
         font-size: 2.5rem; }
     .mb-resp {
@@ -148,6 +142,9 @@ body {
     #design-concept-header {
         margin-top: 1 !important;
         margin-bottom: 1 !important;
+    }
+    .concept-caption {
+        padding-top: 50px;
     }
 }
 @media (max-width: 300px) {
