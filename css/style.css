@@ -61,7 +61,7 @@ body {
 
 #design-concept-header {
     position: relative;
-    min-width: 600px;
+    min-width: 300px;
     min-height: 220px;
     background: url(../sites/Glozzom/images/lights.jpg);
     background-attachment: fixed;
