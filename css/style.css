@@ -7,11 +7,14 @@ body {
     /* background: rgba(207, 207, 207, 0.555); */
     border-bottom: rgb(146, 1, 1) 3px solid;
     /* color: rgb(146, 1, 1); */
-    opacity: 0.8;
+    opacity: .92;
 }
 
-.nav-link {
-    color: rgb(146, 1, 1);
+.navbar .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 }
 
 
@@ -44,7 +47,7 @@ body {
 }
 
 #main-section .fas {
-	color: rgb(122, 16, 16);
+	color: red;
 	background: #fff;
 	padding: 5px;
 	border-radius: 5px;
