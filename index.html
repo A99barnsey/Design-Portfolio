@@ -50,9 +50,9 @@
                 <li class="nav-item ">
                     <a class="nav-link" href="/pricing.html">PRICING</a>
                 </li>
-                <li class="nav-item ">
+                <!-- <li class="nav-item ">
                     <a class="nav-link" href="#">ABOUT US</a>
-                </li>
+                </li> -->
             </ul>
         </div>
         </div>
@@ -248,12 +248,12 @@
                         <div class="card bg-dark">
                             <div class="card-header">
                                 <h5 class="mb-0">
-                                    <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                                    <div href="#collapse1" data-toggle="collapse" data-parent="#accordion" onclick="scrollIfShow()"> 
                                         <i class="fas fa-arrow-circle-down"></i> Features
                                     </div>
                                 </h5>
                             </div>
-                            <div id="collapse2" class="collapse ">
+                            <div id="collapse1" class="collapse ">
                                 <div class="card-body justify-content-center">
                                     <ul style="text-align: left;" class="fa-ul">
                                         <li><p class="lead"><i class="fa-li fa fa-home"></i>Users can register, browse listings, search by category, and make inquiries on properties.</p></li>
@@ -338,7 +338,17 @@
             }
         });
 
-        //toggle accordion on autoscroll
+        //Scroll When Manually Expanding Accordion
+        function scrollIfShow(){
+            console.log("manually clicked accordion");
+            if ($('#collapse1').hasClass("show")){                
+                console.log("no scroll");
+            }
+            else {
+                setTimeout(function () { $('.collapse').addClass('show'); window.scrollTo(0, document.body.scrollHeight); }, 500);
+                console.log("scroll");
+            }
+        }
 
     </script>
 </body>
