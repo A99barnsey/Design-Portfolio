@@ -18,7 +18,7 @@
     <!-- NAV BAR -->
     <nav id="main-nav" class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
         <div class="container">
-        <a class="navbar-brand" href="#"><img src="/Design-Portfolio/images/tws_logo.png" width=55px alt=""></a>
+        <!-- <a class="navbar-brand" href="#"><img src="/Design-Portfolio/images/tws_logo.png" width=55px alt=""></a> -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#design-concept-header">DESIGNS</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#bt-realty">WEB-APP</a>
+                    <a class="nav-link" href="#BT-Realty" onclick="openAccordion()">WEB-APP</a>
                 </li>
 
                 <!-- <li class="nav-item active dropdown">
@@ -48,7 +48,7 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">PRICING</a>
+                    <a class="nav-link" href="/pricing.html">PRICING</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">ABOUT US</a>
@@ -220,7 +220,7 @@
                                     <h2 class="display-4">Tech Startup</h2>
                                     <p class="lead">Glozzom- a multi-page tech startup promotion concept. Features a carousel and Youtube video embedding.
                                     </p>
-                                    <a href="http://a99barnsey.github.io/Design-Portfolio/sites/Glozzom/index.html" class="btn btn-danger btn-lg">Explore Design</a>
+                                    <a href="http://a99barnsey.github.io/Design-Portfolio/sites/Glozzom/index.html" class="btn btn-danger btn-lg" >Explore Design</a>
                                 </div>
                                 <div class="col d-none d-lg-block">
                                     <img class="carousel-img" src="/Design-Portfolio/images/site_link_images/glozzom_laptop_sm.png" alt="">
@@ -235,8 +235,49 @@
     </div>
 
     <!-- WEB APP -->
+    <section id="BT-Realty" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1>Web App: BT Realty </i></h1>
+                    <p class="lead">BT Realty is a fully-functional web app we built and deployed to a Digital Ocean cloud server.
+                    </p>
+
+                    <!-- accordion -->
+                    <div id="accordion">
+                        <div class="card bg-dark">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                                        <i class="fas fa-arrow-circle-down"></i> Features
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse ">
+                                <div class="card-body justify-content-center">
+                                    <ul style="text-align: left;" class="fa-ul">
+                                        <li><p class="lead"><i class="fa-li fa fa-home"></i>Users can register, browse listings, search by category, and make inquiries on properties.</p></li>
+                                        <li><p class="lead"><i class="fa-li fa fa-home"></i>Admin dashboard allows staff to easily update site with new property listings, add or update realtors, and monitor the status of user inquiries.</p></li>
+                                        <li><p class="lead"><i class="fa-li fa fa-home"></i>User inquiries are automatically emailed to the realtor associated with the property.  Users are notified if they have inquired on a listing previously.</p></li>
+                                        <li><p class="lead"><i class="fa-li fa fa-home"></i>Seller of the Month is selected form admin dashboard and the about page is dynamically updated.</p></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <a href="http://165.22.133.76/" class="btn btn-outline-light mt-3">Visit Site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="bt-realty-app">
-        
+
     </section>
     <!-- DESIGN CONCEPTS -->
     <!-- <br>
@@ -254,9 +295,9 @@
 
     <!-- Footer -->
     <section id="footer-section">
-    <footer id="main-footer" class="py-4 text-center bg-dark">
+    <footer id="main-footer" class="py-3 text-center bg-black">
         Copyright &copy;
-        <span id="year"></span> <br>Triumvirate Web Services
+        <span id="year"></span> <br>Polarity Web Technologies
     </footer>
     </section>
 
@@ -292,7 +333,13 @@
                     window.location.hash = hash;
                 })
             }
+            if (this.hash == '#BT-Realty') {
+                setTimeout(function () { $('.collapse').addClass('show'); window.scrollTo(0, document.body.scrollHeight);}, 900);
+            }
         });
+
+        //toggle accordion on autoscroll
+
     </script>
 </body>
 </html>
