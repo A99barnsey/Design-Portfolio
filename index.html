@@ -28,11 +28,12 @@
                     <a class="nav-link" href="#main-section" style="border-right: red 3px solid; padding-right: 1.5rem;">Home</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#design-concept-header">Designs</a>
-                </li>
-                <li class="nav-item ">
                     <a class="nav-link" href="#BT-Realty" onclick="openAccordion()">Web-App</a>
                 </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#design-concept-header">Designs</a>
+                </li>
+                
 
                 <!-- <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
@@ -66,10 +67,11 @@
             <div class="main-inner container mb-6">
                 <div class="row ">
                     <div class="col-lg-8 d-lg-block ">
-                        <h1 class="display-4">Custom built <strong>websites</strong> and <strong>web apps</strong>!</h1>
+                        <h1 class="display-4 full-heading">Custom built <strong>websites</strong> and <strong>web apps</strong>!</h1>
+                        <h1 class="display-4 short-heading">Custom <strong>websites</strong> and <strong>web apps</strong>!</h1>
                         <div class="d-flex">
                             <div class="p-4 align-self-start line-item">
-                                <i class="fas fa-check fa-2x"></i>
+                                <i class="fas fa-check check-large fa-2x"></i><i class="fas fa-check check-small "></i>
                             </div>
                             <div class="p-4 align-self-end line-item">
                                 Responsive & mobile first design ensures your site looks and works great on any device!
@@ -77,7 +79,7 @@
                         </div>
                         <div class="d-flex">
                             <div class="p-4 align-self-start line-item">
-                                <i class="fas fa-check fa-2x"></i>
+                                <i class="fas fa-check check-large fa-2x"></i><i class="fas fa-check check-small "></i>
                             </div>
                             <div class="p-4 align-self-end line-item">
                                 Every website comes with robust, easy to use admin functionality to help you manage your site and keep it updated.
@@ -85,7 +87,7 @@
                         </div>
                         <div class="d-flex">
                             <div class="p-4 align-self-start line-item">
-                                <i class="fas fa-check fa-2x"></i>
+                                <i class="fas fa-check check-large fa-2x"></i><i class="fas fa-check check-small "></i>
                             </div>
                             <div class="p-4 align-self-end line-item">
                                 Scalable solutions.  Secure operations.  Search engine optimized.
@@ -143,21 +145,21 @@
 
 
     <!-- HOME ICON SECTION -->
-    <section id="home-icons" class="pt-4">
+    <section id="home-icons" class="pt-sm-4 pt-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-1 text-center">
-                    <i class="fab fa-python fa-3x mb-1"></i>
+                    <i class="icon-large fab fa-python fa-3x mb-1"></i><i class="icon-small fab fa-python fa-2x mb-1"></i>
                     <h3>Python & Django</h3>
                     <p>The framework that powers our websites.  </p>
                 </div>
                 <div class="col-md-4 mb-1 text-center">
-                    <i class="fas fa-database fa-3x mb-1"></i>
+                    <i class="icon-large fas fa-database fa-3x mb-1"></i><i class="icon-small fas fa-database fa-2x mb-1"></i>
                     <h3>Postgresql DB</h3>
                     <p>Data stored securely with Postgresql SQL database.</p>
                 </div>
                 <div class="col-md-4 mb-1 text-center">
-                    <i class="fab fa-digital-ocean fa-3x mb-1"></i>
+                    <i class="icon-large fab fa-digital-ocean fa-3x mb-1"></i><i class="icon-small fab fa-digital-ocean fa-2x mb-1"></i>
                     <h3>Digital Ocean</h3>
                     <p>Your site can be hosted on Digital Ocean's secure, cloud-based servers.</p>
                 </div>
@@ -165,23 +167,80 @@
         </div>
     </section>
 
+    <!-- WEB APP -->
+    <section id="BT-Realty" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-md-4 pt-3 pb-3">
+                    <h1>Sample Web App</i></h1>
+                    <p class="lead">BT Realty is a fully-functional web app we built and deployed to a Digital Ocean cloud
+                        server.
+                    </p>
+    
+                    <!-- accordion -->
+                    <div id="accordion">
+                        <div class="card bg-dark">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <div href="#collapse1" data-toggle="collapse" data-parent="#accordion"
+                                        onclick="scrollIfShow()">
+                                        <i class="fas fa-arrow-circle-down"></i> Features
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse1" class="collapse ">
+                                <div class="card-body justify-content-center">
+                                    <ul style="text-align: left;" class="fa-ul">
+                                        <li>
+                                            <p class="lead"><i class="fa-li fa fa-home"></i>Users can register, browse
+                                                listings, search by category, and make inquiries on properties.</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead"><i class="fa-li fa fa-home"></i>Admin dashboard allows staff to
+                                                easily update site with new property listings, add or update realtors, and
+                                                monitor the status of user inquiries.</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead"><i class="fa-li fa fa-home"></i>User inquiries are automatically
+                                                emailed to the realtor associated with the property. Users are notified if
+                                                they have inquired on a listing previously.</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead"><i class="fa-li fa fa-home"></i>Seller of the Month is selected
+                                                form admin dashboard and the about page is dynamically updated.</p>
+                                        </li>
+                                    </ul>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+                    <a href="https://165.22.133.76/" class="btn btn-outline-light mt-3">Visit Site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- DESIGN CONCEPT Header -->
-    <section id="design-concept-header">
+    <!-- <section id="design-concept-header">
         <div class="dark-overlay2">
             <div class="row">
                 <div class="col">
-                    <div class="pt-5">
+                    <div class="pt-md-5">
                         <br>
                         <h1>Design Concepts</h1> 
                     </div>
                 </div>
             </div>                                          
         </div>
-    </section>
+    </section> -->
 
 
     <!-- DESIGN CONCEPTS -->
-    <div id="design-concepts-body" class="container">
+    <!-- <div id="design-concepts-body" class="container">
         <div class="row">
             <div class="col m-auto">
                 <div class="">
@@ -232,48 +291,49 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-- WEB APP -->
-    <section id="BT-Realty" class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center py-5">
-                    <h1>Sample Web App</i></h1>
-                    <p class="lead">BT Realty is a fully-functional web app we built and deployed to a Digital Ocean cloud server.
-                    </p>
-
-                    <!-- accordion -->
-                    <div id="accordion">
-                        <div class="card bg-dark">
-                            <div class="card-header">
-                                <h5 class="mb-0">
-                                    <div href="#collapse1" data-toggle="collapse" data-parent="#accordion" onclick="scrollIfShow()"> 
-                                        <i class="fas fa-arrow-circle-down"></i> Features
-                                    </div>
-                                </h5>
-                            </div>
-                            <div id="collapse1" class="collapse ">
-                                <div class="card-body justify-content-center">
-                                    <ul style="text-align: left;" class="fa-ul">
-                                        <li><p class="lead"><i class="fa-li fa fa-home"></i>Users can register, browse listings, search by category, and make inquiries on properties.</p></li>
-                                        <li><p class="lead"><i class="fa-li fa fa-home"></i>Admin dashboard allows staff to easily update site with new property listings, add or update realtors, and monitor the status of user inquiries.</p></li>
-                                        <li><p class="lead"><i class="fa-li fa fa-home"></i>User inquiries are automatically emailed to the realtor associated with the property.  Users are notified if they have inquired on a listing previously.</p></li>
-                                        <li><p class="lead"><i class="fa-li fa fa-home"></i>Seller of the Month is selected form admin dashboard and the about page is dynamically updated.</p></li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                        </div>
+<!-- SHOWCASE SLIDER -->
+<section id="showcase" >
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <h2 class="mt-3" style="text-align: center;">Design Concepts</h2>
+            <div class="carousel-item carousel-image-1 active">
+                <div class="container">
+                    <div class="carousel-caption text-center mb-2">
+                        <a href="https://a99barnsey.github.io/Design-Portfolio/sites/loop lab/index.html" class="btn btn-danger">Explore Social Media</a>
                     </div>
+                </div>
+            </div>
 
-
-
-                    <a href="https://165.22.133.76/" class="btn btn-outline-light mt-3">Visit Site</a>
+            <div class="carousel-item carousel-image-2 ">
+                <div class="container">
+                    <div class="carousel-caption text-center mb-2">
+                        <a href="https://a99barnsey.github.io/Design-Portfolio/sites/Mizuxe/index.html" class="btn btn-danger">Explore Media Promotion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-3">
+                <div class="container">
+                    <div class="carousel-caption text-center mb-2">
+                        <a href="https://a99barnsey.github.io/Design-Portfolio/sites/Glozzom/index.html" class="btn btn-danger">Explore Tech Startup</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</section>
 
 
     <section id="bt-realty-app">
@@ -333,22 +393,8 @@
                     window.location.hash = hash;
                 })
             }
-            if (this.hash == '#BT-Realty') {
-                setTimeout(function () { $('.collapse').addClass('show'); window.scrollTo(0, document.body.scrollHeight);}, 900);
-            }
         });
 
-        //Scroll When Manually Expanding Accordion
-        function scrollIfShow(){
-            console.log("manually clicked accordion");
-            if ($('#collapse1').hasClass("show")){                
-                console.log("no scroll");
-            }
-            else {
-                setTimeout(function () { $('.collapse').addClass('show'); window.scrollTo(0, document.body.scrollHeight); }, 500);
-                console.log("scroll");
-            }
-        }
 
     </script>
 </body>

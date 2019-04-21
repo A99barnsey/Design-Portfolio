@@ -23,6 +23,9 @@ body {
     color: #fff;
 }
 
+.icon-small {
+    display: none;
+}
 
 #main-section {
     background: url(../images/web_dev_background.jpg);
@@ -46,11 +49,18 @@ body {
     padding-top: 150px;
 }
 
+#main-section .short-heading {
+    display: none;
+}
+
 #main-section .fas {
 	color: red;
 	background: #fff;
 	padding: 5px;
 	border-radius: 5px;
+}
+#main-section .check-small {
+    display: none;
 }
 
 .contact-form {
@@ -90,6 +100,8 @@ body {
 #home-icons {
     color: black;
     background: red;
+    /* padding-top: 4;
+    padding-bottom: 4; */
 }
 
 #design-concept-header h1 {
@@ -105,14 +117,45 @@ body {
     color: white;
 }
 
-/* Carousel CSS */
+/* NEW Carousel CSS */
+/* #showcase {
+    background: url(../sites/Glozzom/images/lights.jpg);
+} */
 
-#showcase {
+.carousel-item {
+    height: 620px;
+}
+
+.carousel-image-1 {
+    background: url(../images/site_link_images/looplab_laptop_sm_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-image-2 {
+    background: url(../images/site_link_images/mizuxe_laptop_sm_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-image-3 {
+    background: url(../images/site_link_images/glozzom_laptop_sm_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*END NEW Carousel CSS */
+
+/* OLD Carousel CSS */
+
+/* #showcase {
     background: black;
 }
 
 .concept-caption {
-    /* position: relative; */
     text-align: center;
     justify-content: center;
     padding-top: 70px;
@@ -130,7 +173,9 @@ body {
 .carousel-img {
     max-width: 500px;
     height: auto;
-}
+} */
+/* END OLD Carousel CSS */
+
 /* 
 #accordion {
     background: red;
@@ -144,15 +189,43 @@ body {
     outline: green;
 } */
 
-.card-header {
+/* .card-header { */
     /* border: none !important; */
     /* background-color: red; */
-}
+/* } */
 
 
 @media (max-width: 768px) {
+    #main-section {
+        background: url(../images/dev_background_small.png);
+        background-repeat: no-repeat;  
+        min-height: 512px;
+        font-size: 1rem;
+    }
+
+    #main-section .dark-overlay {
+        min-height: 512px;
+    }
+    #main-section .main-inner {
+        padding-top: 90px;
+    }
+    .main-inner{
+        margin-bottom: 1;
+    }
+    #main-section .short-heading {
+    display: inline-block;
+    }
+    #main-section .full-heading {
+    display: none;
+    }
+    #main-section .check-small {
+    display: inline-block;
+    }
+    #main-section .check-large {
+    display: none;
+    }
     #main-section h1 {
-        font-size: 2.5rem; }
+        font-size: 3.25rem; }
     .mb-resp {
         margin-bottom: 1rem; } 
     .line-item {
@@ -160,6 +233,9 @@ body {
         padding-top: .5rem !important;
         padding-left: .5rem !important;
         padding-right: .5rem !important;
+    }
+    #design-concept-header {
+        min-height: 110px;
     }
     #design-concept-header h1{
         font-size: 2.5rem;
@@ -171,14 +247,65 @@ body {
     .concept-caption {
         padding-top: 50px;
     }
+    .icon-small{
+        display: inline-block;
+    }
+    .icon-large{
+        display: none;
+    }
+    .carousel-item {
+    height: 570
+    }
+    .carousel-image-1 {
+        background: url(../images/site_link_images/looplab_laptop_sm.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    .carousel-image-2 {
+        background: url(../images/site_link_images/mizuxe_laptop_sm.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .carousel-image-3 {
+        background: url(../images/site_link_images/glozzom_laptop_sm.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
 }
+
+@media (max-width: 410px) {
+    #main-section h1 {
+        font-size: 2.25rem; }
+
+    .carousel-item {
+    height: 300px;
+    }
+}
+
 @media (max-width: 300px) {
     #main-section h1 {
       font-size: 1.5rem; }
+
+    #main-section .main-inner {
+    padding-top: 75px;
+    }
 
     #main-section p {
       font-size: 1rem; } 
     #design-concept-header h1{
         font-size: 2rem;
     }
+    .carousel-item {
+    height: 280px;
+    }
+    #home-icons p{
+        display: none;
+    }
+    /* #home-icons {
+        padding-top: 1 !important;
+    } */
 }
