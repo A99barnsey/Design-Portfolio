@@ -144,6 +144,21 @@ button.navbar-toggler:focus { outline: 1px none; }
     max-width: 600px;
 }
 
+/* PRICING */
+
+#pricing {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pricing .card-body {
+    color: white;
+}
+
+#pricing .card {
+    border: none;
+}
+
 @media (max-width: 768px) {
     #main-section {
         background: url(../images/dev_background_small.png);
