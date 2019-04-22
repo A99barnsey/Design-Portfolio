@@ -163,7 +163,7 @@ button.navbar-toggler:focus { outline: 1px none; }
     #main-section {
         background: url(../images/dev_background_small.png);
         background-repeat: no-repeat;  
-        min-height: 512px;
+        min-height: 512px; 
         font-size: 1rem;
     }
 
