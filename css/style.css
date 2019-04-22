@@ -71,7 +71,7 @@ button.navbar-toggler:focus { outline: 1px none; }
 }
 
 .gradient-bg {
-    background: url(../images/grey_background.png);
+    background: url(../images/grey_background_sm.png);
     background-size: auto;
 }
 
