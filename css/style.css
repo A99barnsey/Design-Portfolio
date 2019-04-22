@@ -4,11 +4,10 @@ body {
 }
 
 .navbar {
-    /* background: rgba(207, 207, 207, 0.555); */
-    border-bottom: rgb(146, 1, 1) 3px solid;
-    /* color: rgb(146, 1, 1); */
-    opacity: .92;
+    border-bottom: black(146, 1, 1) 3px solid;
 }
+
+button.navbar-toggler:focus { outline: 1px none; }
 
 .navbar .nav-link {
     font-size: 14px;
@@ -17,6 +16,9 @@ body {
     padding-right: 1rem !important;
 }
 
+#main-nav .active {
+    background-color: rgb(221, 0, 0) !important;
+}
 
 #main-footer {
     /* background: rgba(207, 207, 207, 0.555); */
@@ -68,9 +70,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.card-body {
-    opacity: 0.8;
-}
 
 #design-concept-header {
     position: relative;
@@ -111,88 +110,26 @@ body {
 }
 
 
-
 .bg-red {
     background: red;
     color: white;
 }
 
-/* NEW Carousel CSS */
-/* #showcase {
-    background: url(../sites/Glozzom/images/lights.jpg);
-} */
-
-.carousel-item {
-    height: 620px;
-}
-
-.carousel-image-1 {
-    background: url(../images/site_link_images/looplab_laptop_sm_background.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.carousel-image-2 {
-    background: url(../images/site_link_images/mizuxe_laptop_sm_background.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.carousel-image-3 {
-    background: url(../images/site_link_images/glozzom_laptop_sm_background.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.concept-description {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
 }
 
 
-/*END NEW Carousel CSS */
-
-/* OLD Carousel CSS */
-
-/* #showcase {
-    background: black;
+.carousel-indicators {
+    bottom: -5px;
 }
 
-.concept-caption {
-    text-align: center;
-    justify-content: center;
-    padding-top: 70px;
-    padding-bottom: 30px;
+.img-max {
+    max-width: 526px;
+    width: 100%;
+    
 }
-
-.carousel-item {
-    height: 550px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.carousel-img {
-    max-width: 500px;
-    height: auto;
-} */
-/* END OLD Carousel CSS */
-
-/* 
-#accordion {
-    background: red;
-    color: black;
-}
-
-.card {
-    background: red;
-    color: white;
-    border: 3px;
-    outline: green;
-} */
-
-/* .card-header { */
-    /* border: none !important; */
-    /* background-color: red; */
-/* } */
 
 
 @media (max-width: 768px) {
@@ -253,42 +190,23 @@ body {
     .icon-large{
         display: none;
     }
-    .carousel-item {
-    height: 570
-    }
-    .carousel-image-1 {
-        background: url(../images/site_link_images/looplab_laptop_sm.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
-
-    .carousel-image-2 {
-        background: url(../images/site_link_images/mizuxe_laptop_sm.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
-    .carousel-image-3 {
-        background: url(../images/site_link_images/glozzom_laptop_sm.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center top;
+    .concept-description {
+        font-size: 1.75rem;
     }
 }
 
 @media (max-width: 410px) {
     #main-section h1 {
         font-size: 2.25rem; }
-
-    .carousel-item {
-    height: 300px;
+    .concept-description {
+        font-size: 1.5rem;
     }
+
 }
 
 @media (max-width: 300px) {
     #main-section h1 {
-      font-size: 1.5rem; }
+      font-size: 1.3rem; }
 
     #main-section .main-inner {
     padding-top: 75px;
@@ -299,13 +217,9 @@ body {
     #design-concept-header h1{
         font-size: 2rem;
     }
-    .carousel-item {
-    height: 280px;
-    }
+
     #home-icons p{
         display: none;
     }
-    /* #home-icons {
-        padding-top: 1 !important;
-    } */
+
 }
