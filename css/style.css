@@ -54,6 +54,9 @@ button.navbar-toggler:focus { outline: 1px none; }
 #main-section .short-heading {
     display: none;
 }
+#main-section .line-item {
+    font-size: 1.2rem;
+}
 
 #main-section .fas {
 	color: red;
@@ -179,9 +182,15 @@ button.navbar-toggler:focus { outline: 1px none; }
     border: none;
 }
 
+@media (max-width: 1200px){
+    #main-section .line-item{
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     #main-section {
-        background: url(../images/dev_background_small.png);
+        background: url(../images/web_dev_background_sm.jpg);
         background-repeat: no-repeat;  
         min-height: 512px; 
         font-size: 1rem;
